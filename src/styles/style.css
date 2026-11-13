@@ -1,0 +1,158 @@
+/* 공통 */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+main {
+  padding: 100px 0;
+}
+
+/* 오류 메시지 */
+.errorMessage {
+  margin: 10px 0;
+  color: #E53935;
+}
+
+/* 공통 버튼 */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 130px;
+  height: 48px;
+  padding: 0 25px;
+  border: 0;
+  border-radius: 8px;
+  background: #3E45EC;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.btn:hover:not(:disabled) {
+  background: #292FC5;
+}
+
+/* 보조 버튼 */
+.btn.secondaryBtn {
+  background: #666;
+}
+
+.btn.secondaryBtn:hover:not(:disabled) {
+  background: #444;
+}
+
+/* 삭제 버튼 */
+.btn.deleteBtn {
+  background: #E53935;
+}
+
+.btn.deleteBtn:hover:not(:disabled) {
+  background: #C62828;
+}
+
+/* 버튼 비활성화 */
+.btn:disabled {
+  opacity: .5;
+  cursor: default;
+}
+
+/* 폼 공통 영역 */
+.formWrap {
+  padding: 35px 30px;
+  border-top: 2px solid #222;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 폼 입력 항목 */
+.formItem {
+  margin-bottom: 25px;
+}
+
+.formItem:last-child {
+  margin-bottom: 0;
+}
+
+.formItem label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.formItem input,
+.formItem select,
+.formItem textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  color: #222;
+  font-size: 16px;
+}
+
+.formItem input:focus,
+.formItem select:focus,
+.formItem textarea:focus {
+  border-color: #3E45EC;
+  outline: none;
+}
+
+.formItem input::placeholder,
+.formItem textarea::placeholder {
+  color: #aaa;
+}
+
+.formItem textarea {
+  resize: vertical;
+  line-height: 1.7;
+}
+
+/* 폼 하단 버튼 영역 */
+.formBtnBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+/* 폼 하단 버튼 오른쪽 정렬 */
+.formBtnBox.right {
+  justify-content: flex-end;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+
+  /* 공통 버튼 */
+  .btn {
+    min-width: 80px;
+    height: 44px;
+    padding: 0 15px;
+    font-size: 14px;
+  }
+
+  /* 공통 폼 */
+  .formWrap {
+    padding: 25px 15px;
+  }
+
+  .formItem {
+    margin-bottom: 20px;
+  }
+
+  .formItem input,
+  .formItem textarea {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+}
