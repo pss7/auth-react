@@ -156,3 +156,192 @@ main {
   }
 
 }
+
+.authWrap {
+  display: flex;
+  justify-content: center;
+  padding: 100px 20px;
+}
+
+.authBox {
+  width: 100%;
+  max-width: 460px;
+}
+
+.authBox h1 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.authDescription {
+  margin-top: 12px;
+  color: #777;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 45px;
+}
+
+.authForm .formItem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.authForm .formItem label {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.authForm .formItem input {
+  width: 100%;
+  height: 52px;
+  padding: 0 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  color: #222;
+  font-size: 15px;
+}
+
+.authForm .formItem input:focus {
+  border-color: #3E45EC;
+  outline: none;
+}
+
+.authForm .formItem input::placeholder {
+  color: #999;
+}
+
+.authCheckBox label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #555;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.authCheckBox input {
+  width: 16px;
+  height: 16px;
+  accent-color: #3E45EC;
+}
+
+.authSubmitBtn {
+  width: 100%;
+  min-height: 52px;
+  margin-top: 10px;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 8px;
+  background: #3E45EC;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.authLinkBox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.authLinkBox a,
+.authBottomBox a {
+  color: #555;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.authLinkBox a:hover,
+.authBottomBox a:hover {
+  color: #3E45EC;
+}
+
+.authBottomBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.authBottomBox p {
+  color: #777;
+}
+
+.authBottomBox a {
+  color: #3E45EC;
+  font-weight: 600;
+}
+
+.authTextBtn {
+  align-self: center;
+  padding: 5px;
+  border: 0;
+  background: transparent;
+  color: #3E45EC;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.snsLoginBox {
+  margin-top: 40px;
+}
+
+.snsLoginTitle {
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.snsLoginList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.snsLoginList button {
+  padding: 0 20px;
+  border: 0;
+  background: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.snsLoginList button+button {
+  border-left: 1px solid #ddd;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+
+  .authWrap {
+    padding: 60px 20px;
+  }
+
+  .authBox h1 {
+    font-size: 26px;
+  }
+
+  .authForm {
+    margin-top: 35px;
+  }
+
+  .authLinkBox {
+    gap: 12px;
+  }
+
+}
