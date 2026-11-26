@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "홍길동",
+      "loginId": "hong123",
+      "email": "hong@example.com"
+    },
+    {
+      "id": "2",
+      "name": "김철수",
+      "loginId": "kim456",
+      "email": "kim@example.com"
+    },
+    {
+      "name": "테스트",
+      "email": "test@test.com",
+      "id": "3L9NIYd"
+    },
+    {
+      "name": "테스트",
+      "email": "test3@test.com",
+      "id": "288PciN"
+    },
+    {
+      "email": "test3@test.com",
+      "password": "test1234",
+      "id": "666CnG6"
+    },
+    {
+      "email": "asd@ads.com",
+      "password": "asdasd",
+      "id": "mOkIPjC"
+    },
+    {
+      "email": "asdasd@asdsad.com",
+      "password": "asdasd",
+      "id": "q--1ANl"
+    },
+    {
+      "email": "tres@dsaddsa.com",
+      "password": "tsad123",
+      "id": "d4bsovZ"
+    },
+    {
+      "email": "asdasd@asdsad.com",
+      "password": "dasdasdasd",
+      "id": "yo-Bdb3"
+    }
+  ]
+}

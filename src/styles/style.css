@@ -157,6 +157,20 @@ main {
 
 }
 
+/* 헤더 */
+header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #fbfbfb;
+}
+
+header .box {
+  display: flex;
+  gap: 20px;
+}
+
 .authWrap {
   display: flex;
   justify-content: center;
