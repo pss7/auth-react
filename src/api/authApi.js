@@ -79,3 +79,31 @@ export async function logout() {
   }
 
 }
+
+/* 아이디 찾기 */
+export async function findId(data) {
+
+  const params = new URLSearchParams({
+    name: data.name.trim(),
+    email: data.email.trim()
+  });
+
+  const response = await fetch(
+    `http://localhost:3001/users?${params.toString()}`
+  );
+
+  if (!response.ok) {
+    throw new Error("아이디 찾기 실패");
+  }
+
+  const users = await response.json();
+
+  if (users.length === 0) {
+    throw new Error("일치하는 회원 정보가 없습니다.");
+  }
+
+  return {
+    user: users[0]
+  };
+
+}
